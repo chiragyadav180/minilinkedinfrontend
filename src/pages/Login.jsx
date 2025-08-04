@@ -4,7 +4,7 @@ import { useAuth } from '../context/AuthContext';
 
 function Login() {
   const navigate = useNavigate();
-  const { login } = useAuth(); // ✅ use context login method
+  const { login } = useAuth(); 
   const [form, setForm] = useState({ email: '', password: '' });
   const [error, setError] = useState('');
 
@@ -24,7 +24,7 @@ function Login() {
       const data = await res.json();
       if (!res.ok) return setError(data.message);
 
-      // ✅ Use context login to set user globally
+
       login({ ...data.user, token: data.token });
 
       navigate('/home');
