@@ -1,22 +1,17 @@
-# Mini LinkedIn Community Platform 👥
+# 👥 Mini LinkedIn Frontend
 
-A mini LinkedIn-like web application where users can register/login, create posts, view a feed, and visit user profiles.
+This is the **frontend** of the Mini LinkedIn-like Community Platform built using React. It allows users to register/login, view a post feed, create posts, and browse user profiles.
 
 ---
 
-## 🛠️ Stack Used
+## 🧰 Stack Used
 
 ### 🧑‍💻 Frontend
-- **React** (Vite)
-- **Tailwind CSS**
-- **React Router DOM**
-
-### 🧑‍🍳 Backend
-- **Node.js**
-- **Express.js**
-- **MongoDB** (via **Mongoose**)
-- **JWT** (for authentication)
-- **dotenv**
+- **React** (via Vite)
+- **Tailwind CSS** – for styling
+- **React Router DOM** – for routing
+- **Context API** – for authentication state management
+- **Fetch API** – for communicating with the backend
 
 ---
 
@@ -25,7 +20,10 @@ A mini LinkedIn-like web application where users can register/login, create post
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/minilinkedin.git
-cd minilinkedin
+git clone https://github.com/yourusername/minilinkedinfrontend.git
+cd minilinkedinfrontend
+2. Install Dependencies
+npm install
 
-
+3. Start the Development Server
+npm run dev
